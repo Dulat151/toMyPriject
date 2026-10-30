@@ -1,62 +1,137 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Car Dealership</title>
-    <!-- Подключенные стили CSS (Bootstrap) -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../static/style.css"> <!-- или ваш файл стилей -->
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Навигационная панель -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Car Dealership</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                <li class="nav-item active"><a class="nav-link" href="/about">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Car Dealership</a>
 
-    <!-- Основной контент: О нас -->
-    <div class="container mt-5">
-        <div class="text-center">
-            <h1>About Us</h1>
-            <p class="lead">Welcome to the National Car Dealership network across the USA. We provide the best cars and exceptional customer service.</p>
-        </div>
+    <button class="navbar-toggler" type="button"
+            data-toggle="collapse"
+            data-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="row mt-4">
-            <!-- Карточка участника 1 -->
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Team Member">
-                    <div class="card-body">
-                        <h5 class="card-title">John Doe</h5>
-                        <p class="card-text"><strong>Role:</strong> Full Stack Developer</p>
-                        <p class="card-text">Responsible for backend APIs and frontend integration.</p>
-                        <p class="card-text"><small class="text-muted">john.doe@cardealership.com</small></p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Карточка участника 2 -->
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Team Member">
-                    <div class="card-body">
-                        <h5 class="card-title">Jane Smith</h5>
-                        <p class="card-text"><strong>Role:</strong> Frontend Developer</p>
-                        <p class="card-text">Designed responsive user interfaces using React and Bootstrap.</p>
-                        <p class="card-text"><small class="text-muted">jane.smith@cardealership.com</small></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/about">
+                    About Us <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact Us</a>
+            </li>
+        </ul>
     </div>
+</nav>
+
+<div class="container mt-5 mb-5">
+
+    <div class="text-center">
+        <h1>About Us</h1>
+        <p class="lead">
+            Welcome to the National Car Dealership network across the USA.
+            We provide quality vehicles and exceptional customer service.
+        </p>
+    </div>
+
+    <div class="row mt-4">
+
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600"
+                    class="card-img-top"
+                    alt="John Doe">
+                <div class="card-body">
+                    <h5 class="card-title">John Doe</h5>
+                    <p class="card-text">
+                        <strong>Role:</strong> General Manager
+                    </p>
+                    <p class="card-text">
+                        Leads dealership operations and ensures excellent
+                        customer service.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            john.doe@cardealership.com
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img
+                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600"
+                    class="card-img-top"
+                    alt="Jane Smith">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">
+                        <strong>Role:</strong> Sales Manager
+                    </p>
+                    <p class="card-text">
+                        Helps customers find suitable vehicles and manages
+                        the sales team.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            jane.smith@cardealership.com
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img
+                    src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600"
+                    class="card-img-top"
+                    alt="Michael Johnson">
+                <div class="card-body">
+                    <h5 class="card-title">Michael Johnson</h5>
+                    <p class="card-text">
+                        <strong>Role:</strong> Customer Support Specialist
+                    </p>
+                    <p class="card-text">
+                        Assists customers with questions, feedback and
+                        dealership services.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            michael.johnson@cardealership.com
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
 </html>
