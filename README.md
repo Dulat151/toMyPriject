@@ -1,3 +1,9 @@
-Repository name (например, toMyPriject)
+# Car Dealership Application
 
-Project name (например, Full Stack Capstone Project или Car Dealership Application)
+**Repository name:** `toMyPriject`
+
+**Project name:** Full Stack Capstone Project – Car Dealership Application
+
+## Description
+
+This project is a full-stack car dealership application developed as part of the Full Stack Application Development Capstone Project.
